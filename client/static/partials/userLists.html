@@ -1,0 +1,12 @@
+<div ng-controller='UsersListController' id='usersBox'>
+    <h3>Users List</h3>
+        <table width="800">
+            <tr><th>First Name</th><th>Last Name</th><th>Favorite Language</th></tr>
+            <!-- <li ng-repeat="food in foods | filter:filter_name">{{ food.name }}</li> -->
+            <tr ng-repeat="user in users" ng-class-odd="'d1'" ng-class-even="'d2'">
+                <td>{{user.first_name}}</td>
+                <td>{{user.last_name}}</td>
+                <td>{{user.fav_lang}}</td>
+            </tr>
+        </table>
+</div>
